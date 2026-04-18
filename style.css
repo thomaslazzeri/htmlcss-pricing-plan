@@ -5,5 +5,53 @@
 }
 
 body {
+    min-width: 320px;
     font-family: sans-serif;
+    border: solid 1px red;
 }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* buttons in header*/
+header .period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/*cells*/
+.cell {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*lists*/
+ul {
+  list-style-type: none;
+}
+
+.cell .box-1, .box-2, .box-3 {
+    border: solid 1px fuchsia;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-deck{
+	display: flex;
+	flex-wrap: wrap;
+}
+
