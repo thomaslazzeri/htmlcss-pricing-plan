@@ -8,7 +8,7 @@ body {
     min-width: 320px;
     min-height: 600px;
     font-family: sans-serif;
-    border: solid 2px red;
+    border: solid 2px lightgray;
 }
 
 .debug {
@@ -49,7 +49,6 @@ header .period {
     justify-content: center;
     flex-wrap: wrap;
     overflow: auto;
-
 }
 
 .description {
@@ -66,16 +65,34 @@ header .period {
     max-height: 450px;
     min-width: 250px;
     margin: 10px;
-    border: solid 2px fuchsia;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     overflow: auto;
+    border-radius: 20px;
+}
+
+.box-1 {
+    border: solid 2px lightgray;
+}
+
+.box-3 {
+    border: solid 2px lightgray;
+}
+
+.box-2 {
+    color: white;
+    background-color: #6500ff;
 }
 
 .price {
     display: flex;
     justify-content: center;
+}
+
+.cost {
+    font-size: 40px;
 }
 
 .plan {
@@ -93,6 +110,16 @@ header .period {
 .choose-plan {
     display: flex;
     justify-content: center;
+}
+
+.box-1 .choose-plan button {
+    background-color: #6500ff;
+    color: white;
+}
+
+.box-3 .choose-plan button {
+    background-color: #6500ff;
+    color: white;
 }
 
 /*lists*/
