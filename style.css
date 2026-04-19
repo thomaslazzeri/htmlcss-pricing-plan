@@ -12,7 +12,7 @@ body {
 }
 
 .debug {
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -24,11 +24,16 @@ main {
 }
 
 header {
+    width: 800px;
     min-width: 200px;
+    margin-bottom: 40px;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-size: 13px;
 }
 
 /* buttons in header*/
@@ -38,6 +43,11 @@ header .period {
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
+}
+
+.period button {
+    border: none;
+    background-color: white;
 }
 
 /*cells*/
@@ -71,6 +81,8 @@ header .period {
     gap: 10px;
     overflow: auto;
     border-radius: 20px;
+    font-size: 12px;
+    flex-shrink: 0;
 }
 
 .box-1 {
@@ -107,19 +119,41 @@ header .period {
     justify-content: center;
 }
 
+.percentual button {
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+}
+
 .choose-plan {
     display: flex;
     justify-content: center;
 }
 
 .box-1 .choose-plan button {
+    border: none;
     background-color: #6500ff;
     color: white;
+    padding: 15px 40px;
+    margin: 0 50px;
+    border-radius: 10px;
+}
+
+.box-2 .choose-plan button {
+    border: none;
+    background-color: white;
+    margin: 0 50px;
+    padding: 15px 40px;
+    border-radius: 10px;
 }
 
 .box-3 .choose-plan button {
+    border: none;
     background-color: #6500ff;
     color: white;
+    margin: 0 50px;
+    padding: 15px 40px;
+    border-radius: 10px;
 }
 
 /*lists*/
@@ -128,9 +162,19 @@ ul {
 }
 
 ul {
+    margin: 0 50px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+}
+
+li {
+    display: flex;
+    justify-content: start;
+}
+
+li svg {
+    margin-right: 10px;
 }
 
 .cell {
@@ -140,3 +184,5 @@ ul {
 .cell .box-3 {
     flex-grow: 1;
 }
+
+
