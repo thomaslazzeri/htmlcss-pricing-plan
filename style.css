@@ -6,21 +6,29 @@
 
 body {
     min-width: 320px;
+    min-height: 600px;
     font-family: sans-serif;
-    border: solid 1px red;
+    border: solid 2px red;
 }
 
-.container {
-    max-width: 900px;
+.debug {
+    max-width: 950px;
     margin: 0 auto;
     padding: 10px;
 }
 
-header {
+main {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 /* buttons in header*/
@@ -29,29 +37,79 @@ header .period {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 /*cells*/
 .cell {
-    border: solid 1px black;
+    height: 500px;
+    min-height: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/*boxes*/
+.cell .box-1,
+.box-2,
+.box-3 {
+    min-height: 200px;
+    max-height: 450px;
+    min-width: 250px;
+    margin: 10px;
+    border: solid 2px fuchsia;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.percentual {
+    display: flex;
+    justify-content: center;
+}
+
+.choose-plan {
+    display: flex;
     justify-content: center;
 }
 
 /*lists*/
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-.cell .box-1, .box-2, .box-3 {
-    border: solid 1px fuchsia;
+ul {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.card-deck{
-	display: flex;
-	flex-wrap: wrap;
+.cell {
+    flex: 1 0 0 calc((100% - 40px) / 3);
 }
 
+.cell .box-3 {
+    flex-grow: 1;
+}
