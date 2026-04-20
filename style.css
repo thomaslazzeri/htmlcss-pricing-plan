@@ -91,9 +91,9 @@ header .period {
 }
 
 .plan {
-    
-   display: block;
-   text-align: center;
+
+    display: block;
+    text-align: center;
 
 }
 
@@ -108,12 +108,12 @@ header .period {
     border-radius: 6px;
 }
 
-.choose-plan {
+.choose {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.box-light .choose-plan button {
+.box-light .choose button {
     border: none;
     background-color: #6500ff;
     color: white;
@@ -122,12 +122,16 @@ header .period {
     border-radius: 10px;
 }
 
-.box-dark .choose-plan button {
+.box-dark .choose button {
     border: none;
     background-color: white;
     margin: 0 50px;
     padding: 15px 40px;
     border-radius: 10px;
+}
+
+h5 {
+    font-weight: normal;
 }
 
 /*lists*/
@@ -136,9 +140,9 @@ ul {
 }
 
 ul {
-    margin: 10px;
+    margin: 10px 30px;
     display: block;
-    
+    text-align: left;
 }
 
 li {
