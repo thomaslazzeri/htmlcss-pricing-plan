@@ -6,9 +6,8 @@
 
 body {
     min-width: 320px;
-    min-height: 600px;
+    min-height: 700px;
     font-family: sans-serif;
-    border: solid 2px lightgray;
 }
 
 .debug {
@@ -52,25 +51,14 @@ header .period {
 
 /*cells*/
 .cell {
-    height: 500px;
-    min-height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: auto;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
 }
 
 /*boxes*/
-.cell .box-1,
-.box-2,
-.box-3 {
+.box {
     min-height: 200px;
     max-height: 450px;
     min-width: 250px;
@@ -82,25 +70,20 @@ header .period {
     overflow: auto;
     border-radius: 20px;
     font-size: 12px;
-    flex-shrink: 0;
+    flex-grow: 1;
 }
 
-.box-1 {
+.box-light {
     border: solid 2px lightgray;
 }
 
-.box-3 {
-    border: solid 2px lightgray;
-}
-
-.box-2 {
+.box-dark {
     color: white;
     background-color: #6500ff;
 }
 
 .price {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .cost {
@@ -108,15 +91,15 @@ header .period {
 }
 
 .plan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    
+   display: block;
+   text-align: center;
+
 }
 
 .percentual {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .percentual button {
@@ -126,11 +109,11 @@ header .period {
 }
 
 .choose-plan {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.box-1 .choose-plan button {
+.box-light .choose-plan button {
     border: none;
     background-color: #6500ff;
     color: white;
@@ -139,18 +122,9 @@ header .period {
     border-radius: 10px;
 }
 
-.box-2 .choose-plan button {
+.box-dark .choose-plan button {
     border: none;
     background-color: white;
-    margin: 0 50px;
-    padding: 15px 40px;
-    border-radius: 10px;
-}
-
-.box-3 .choose-plan button {
-    border: none;
-    background-color: #6500ff;
-    color: white;
     margin: 0 50px;
     padding: 15px 40px;
     border-radius: 10px;
@@ -162,27 +136,20 @@ ul {
 }
 
 ul {
-    margin: 0 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin: 10px;
+    display: block;
+    
 }
 
 li {
-    display: flex;
-    justify-content: start;
+    margin: 10px;
 }
 
 li svg {
     margin-right: 10px;
 }
 
-.cell {
-    flex: 1 0 0 calc((100% - 40px) / 3);
+
+.box {
+    flex-basis: calc (100% / 3 - (10px * 2) / 3);
 }
-
-.cell .box-3 {
-    flex-grow: 1;
-}
-
-
