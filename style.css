@@ -18,13 +18,11 @@ body {
 
 main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header {
-    width: 800px;
-    min-width: 200px;
     margin-bottom: 40px;
     margin: 10px;
     padding: 10px;
@@ -57,11 +55,12 @@ header .period {
     flex-wrap: wrap;
 }
 
+/*.box {
+    flex-basis: calc(50% / 3 - (10px * 2) / 3);
+}*/
+
 /*boxes*/
 .box {
-    min-height: 200px;
-    max-height: 450px;
-    min-width: 250px;
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -80,6 +79,12 @@ header .period {
 .box-dark {
     color: white;
     background-color: #6500ff;
+}
+
+@media (max-width: 628px) {
+    .box-dark {
+        order: -1;
+    }
 }
 
 .price {
@@ -151,9 +156,4 @@ li {
 
 li svg {
     margin-right: 10px;
-}
-
-
-.box {
-    flex-basis: calc (100% / 3 - (10px * 2) / 3);
 }
