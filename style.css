@@ -33,7 +33,7 @@ header {
     font-size: 13px;
 }
 
-/* buttons in header*/
+/*buttons in header*/
 header .period {
     display: flex;
     justify-content: center;
@@ -42,12 +42,13 @@ header .period {
     flex-wrap: wrap;
 }
 
+/*buttons in header*/
 .period button {
     border: none;
     background-color: white;
 }
 
-/*cells*/
+/*cells in main*/
 .cell {
     display: flex;
     flex-direction: row;
@@ -59,7 +60,7 @@ header .period {
     flex-basis: calc(50% / 3 - (10px * 2) / 3);
 }*/
 
-/*boxes*/
+/*3 boxes in cells*/
 .box {
     margin: 10px;
     padding: 10px;
@@ -72,6 +73,7 @@ header .period {
     flex-grow: 1;
 }
 
+/*light and dark boxes*/
 .box-light {
     border: solid 2px lightgray;
 }
@@ -81,20 +83,24 @@ header .period {
     background-color: #6500ff;
 }
 
+/*responsive design*/
 @media (max-width: 628px) {
     .box-dark {
         order: -1;
     }
 }
 
+/*content in boxes*/
 .price {
     text-align: center;
 }
 
+/*costs in part prices*/
 .cost {
     font-size: 40px;
 }
 
+/*plans in boxes*/
 .plan {
 
     display: block;
@@ -102,22 +108,26 @@ header .period {
 
 }
 
+/*percentuals in part plans*/
 .percentual {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/*buttons in percentuals*/
 .percentual button {
     border: none;
     padding: 6px;
     border-radius: 6px;
 }
 
+/*chooses in part plans*/
 .choose {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/*buttons in chooses in light boxes*/
 .box-light .choose button {
     border: none;
     background-color: #6500ff;
@@ -127,6 +137,7 @@ header .period {
     border-radius: 10px;
 }
 
+/*buttons in chooses in dark boxes*/
 .box-dark .choose button {
     border: none;
     background-color: white;
@@ -135,6 +146,7 @@ header .period {
     border-radius: 10px;
 }
 
+/*titles in boxes*/
 h5 {
     font-weight: normal;
 }
